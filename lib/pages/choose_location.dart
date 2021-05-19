@@ -22,7 +22,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
     WorldTime instance = locations[index];
     await instance.getTime();
     print(instance.time + instance.location);
-    // if (instance.time.isNotEmpty)
     Navigator.pop(context, {
       'location': instance.location,
       'url': instance.url,
